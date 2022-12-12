@@ -1,4 +1,4 @@
-### Codes of Our AAAI2023 Submission “Rotated-DETR: an End-to-End Transformer-based Oriented Object Detector for Aerial Images”
+### Codes of Our SAC2023 Submission “Rotated-DETR: an End-to-End Transformer-based Oriented Object Detector for Aerial Images”
 
 This is the Pytorch implementation of our paper "Rotated-DETR: an End-to-End Transformer-based Oriented Object Detector for Aerial Images". Our codes are based on mmrotate framework.
 
