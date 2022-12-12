@@ -1,0 +1,5 @@
+# ninja log v5
+0	12020	1660803158	/home/jinbeom/r_detr/build/temp.linux-x86_64-3.7/mmrotate/ops/box_iou_rotated/src/box_iou_rotated_cuda.o	81e34dec31724734
+0	17196	1660803163	/home/jinbeom/r_detr/build/temp.linux-x86_64-3.7/mmrotate/ops/box_iou_rotated/src/box_iou_rotated_cpu.o	94b7e48182ed88c5
+1	11138	1660803175	/home/jinbeom/r_detr/build/temp.linux-x86_64-3.7/mmrotate/ops/box_iou_rotated_diff/src/sort_vert_kernel.o	c44184209b3e70fb
+0	16753	1660803181	/home/jinbeom/r_detr/build/temp.linux-x86_64-3.7/mmrotate/ops/box_iou_rotated_diff/src/sort_vert.o	dba197e4ab29bab5

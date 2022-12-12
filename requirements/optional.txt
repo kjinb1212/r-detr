@@ -1,0 +1,5 @@
+imagecorruptions
+scipy
+sklearn
+shapely
+opencv-python

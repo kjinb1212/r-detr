@@ -1,0 +1,14 @@
+1. README.md가 시키는데로 설치하기
+2. sar pretrained weight는 sar_best_mAP_epoch_38.pth 파일입니다
+3. config/_base_/datasets/sar_datasets.py에 data_root 에 데이터 폴더 루터 경로 넣고, data 딕셔너리의 train, val, test에 각각 ann_file, img_prefix가 있는데, 얘네는 data_root + "경로" 로 지정해주면 됩니다.
+- 현재 dataset_type = 'SARDatasets'로 되어있는데, 해당 코드는 mmrotate/datsets/sar_datasets.py임.
+- class는 'ship' 하나임
+- 이미지 로드는 png만 가능함
+- 라벨은 dota 포멧으로 맞춰줘야함
+4. 사용할 config는 configs/sparse_detr/sar/sparse_detr_swint_10_transfer_sar_lr5e5_query50_batch8.py입니다.
+- 열어서 sample_per_gpu로 배치수 조절 가능(배치 = sample_per_gpu * gpu개수)
+- 저장 경로 설정은 work_dir 변경
+- DOTA pretrained로 transfer learning 여부는 load_from 주석 하거나 풀거나로 조절
+- optimizer에서 옵티마이져 조절
+- log_config에 MMDetWandbHook으로 완디비 설정 (멀티gpu에서는 안되는데 이유 모름) (wandb doc에 mmdetection에서 사용하는 방법 참고)
+4. train, test 실행 방법은 README.md 참고하심 됩니다.
